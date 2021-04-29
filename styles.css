@@ -136,3 +136,26 @@ margin: 0;
   max-width: 500px;
    
 }
+
+  /* div.relative {
+    position: relative;
+    left: -705px;
+    top: -1060px; */
+   
+  
+    div.map {
+      position: relative;
+      left: -900px;
+      top: -1450px;
+    }
+  
+    div.img{
+      position: relative;
+      left: -999px;
+      top: -450px;  
+    }
+    div.container{
+      position: relative;
+      left: -600;
+      top: -1200px; 
+    }
