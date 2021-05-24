@@ -49,61 +49,44 @@ h1{
    bottom: 0;
 }
 
-.map{
-    padding:  20px;
-background-color: gray;
 
-}
 .map.map-h{
     padding: 20px;
 }
-#about{
-width: 340px;
-padding: 40px;
-border: 5px solid rebeccapurple;
-margin: 0;
-}
+
 
 
 * {
   box-sizing: border-box;
 }
 
-div.relative {
-  position: relative;
-  top: -0px;
-  }
+
  
 
-div.map {
-  position: relative;
-  left: -999px;
-  top: -1760px;
-}
 
-div.img{
-  position: relative;
-  left: -1049px;
-  top: -400px;  
-}
+
+
 div.container{
   position: relative;
-  left: -600;
-  top: -2200px;
+left: 550px;
+top: 30px;
   background-color: lightgreen;
   width: 300px;
   border: 15px solid green;
   padding: 50px;
   margin: 20px
 }
+#about{
+  position: relative;
+  width: 350px;
+    left: 20px;
+  top: -400;
+  border: solid darkolivegreen;
+}
 p {
   font-size: 18px;
 }
-div.galery{
-  position: relative;
-  left: -520;
-  top: -825;  
-}
+
 .logo{
   width: 50px;
   height: 50px;
@@ -231,4 +214,81 @@ img {vertical-align: middle;}
   border-color: yellowgreen;
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 20px;
+   
+}
+p
+{
+  font-family: "Times New Roman", Times, serif; 
+}
+h3
+{
+    
+    font-family: Impact, Charcoal, sans-serif;
+}
+
+.logo
+{
+    height: 40px;
+    
+}
+
+
+.item-img
+{
+    width: 250px;
+    height: 250px;
+    
+}
+#car
+{
+float: right;
+    
+font-size: 48px;
+color: white;
+}
+
+    
+
+#social-logos
+{
+
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+padding: 20px;
+  font-size: 25px;
+  width: 25px; 
+}
+.fa-google {
+  background: #dd4b39;
+  color: white;
+  padding: 20px;
+  font-size: 25px;
+  width: 25px;
+ 
+}
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+  padding: 20px;
+  font-size: 25px;
+  width: 25px;
+  
+}
+.text-center
+{
+    color: #757575;
+}
+footer{
+    background-color: #D3D3D3;
+
+}
+.f-names{
+  position: relative;
+
 }
