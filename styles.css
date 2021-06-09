@@ -6,7 +6,7 @@
 body{
     width: 100%;
     position: relative;
-    background-image: url("background.jpg"); 
+    background-image: url("Flowerbackground.jpg"); 
     background-size: 100% 100% ;
 }
 h1{
@@ -16,9 +16,9 @@ h1{
 .nav-links{
     position: fixed ;
     overflow: hidden;
-    background-color: darkgreen;
+    background-color: teal;
     width: 100%;
-    z-index: 1;
+    z-index: 2;
 }
 .nav-links a{
     float: left;
@@ -26,15 +26,15 @@ h1{
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 20px;
+    font-family: monospace;
 }
-.nav-links:hover{
-    background-color: green;
-    color: black;
+
+.nav-links a:hover{
+  border-bottom: 3px solid darkblue;
 }
-.nav-links.Home-nav{
-    background-color: #5ac75e;
-    color: white;
+.nav-links a:active{
+border-bottom: 3px solid darkblue;
 }
 .nav-h{
     color: greenyellow;
@@ -45,7 +45,7 @@ h1{
 /*Footer*/
 .footer{
   position: absolute;
-    background-color: gray;
+    background-color: teal;
     width: 100%;
     font-family:'Times New Roman', Times, serif ;
    bottom: 0;
@@ -58,22 +58,56 @@ h1{
 
 /*about newsletter*/
 .submit{
-  position: relative;
-left: 550px;
-top: 30px;
-  background-color: lightgreen;
-  width: 300px;
-  border: 15px solid green;
-  padding: 50px;
-  margin: 20px
-}
-
-#about{
-  position: relative;
+  position: absolute;
+  left: 75%;
+  top: 150px;
+  background-color: wheat;
   width: 350px;
-    left: 20px;
-  top: -400;
+  border: 15px solid darkcyan;
+  padding: 70px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin: 20px
+  
+}
+/*submit paraghraoh*/
+.ask-p{
+  font-size: 28px;
+}
+/*paragraph1-about*/
+  #about{
+  position: relative;
+  width: 500px;
+  height: 440px;
+    left: 450px;
+  top: 40;
+  text-align: center;
   border: solid darkolivegreen;
+font-size: 22px;
+background-color: wheat;
+}
+/*paraghraph2-about*/
+.about2{
+  position: relative;
+  left: 5%;
+  top: -400;
+  background-color: wheat;
+  width: 200px;
+  border:solid teal;
+font-size: 20px;
+}
+/*contact us*/
+.contact{
+  position: relative;
+  left: 5%;
+  top: -400;
+  background-color: wheat;
+  width: 300px;
+  border:solid teal ;
+  font-size: 20px;
+}
+#submit{
+  color: black;
+  background-color: wheat;
 }
 /*Logo*/
 .logo{
@@ -85,11 +119,12 @@ top: 30px;
 .p-1{
     position: relative;
     top: 110;
-    background-color: greenyellow;
-    width: 450px;
-    border: 15px solid green;
+    background-color: wheat;
+    width: 900px;
+    border: 15px solid darkcyan;
     padding: 60px;
     font-family: 'Times New Roman', Times, serif  ;
+    font-size: 22px;
   }  
   /*headline*/
 .a-h{
@@ -97,7 +132,7 @@ top: 30px;
   top: 90px;
  left: 600px;
   color: rgb(7, 59, 7);
-  border-color: green;
+  border-color: teal;
   
 }
 /*Home images*/  
@@ -231,18 +266,63 @@ h3
   position: relative;
   top: -275px;
   font-size: 20px;
-
+background-color: whitesmoke;
+color: teal;
 }
-
-/*Footers text*/
-.f-names{
+.item{
   position: relative;
-
+  background-color: white;
+  border: solid cyan;
+}
+/*footers headline-names*/
+.fh-names{
+  position: absolute;
+  background-color: teal;
+  left: 81%;
+top: 0px;
+font-size: 30px;
+}
+/*footer headline-find us*/
+.fh-find{
+position:absolute;
+  left: 45%;
+  font-size: 30px;
+}
+/*Footers names*/
+.f-names{
+  position: absolute;
+  left: 81%;
+  top: 50px;
+  width: 2px;
+  background-color: teal;
+  font-size: 20px;
+}
+/*footer-social logos*/
+.f-socialogos{
+  position: absolute;
+  top: 50px;
+  left:45%;
+}
+/*footer saparate-line1*/
+.f-line1{
+  position: absolute;
+  width: 1px;
+  height: 150px;
+  left: 40%;
+}
+.f-line2{
+  position: absolute;
+  width: 1px;
+  height: 150px;
+  left: 75%;
+    
 }
 /*f-imgs-git*/
 .f-img{
-  
-  background: gray;
+  position: absolute;
+  bottom: 0;
+  background-color: teal;
+  font-size: 20px;
 }
 /*f-img-facebook*/
 .f-img2{
@@ -258,13 +338,25 @@ left: 280px;
 }
 /*About-images*/
 .about-img1{
-  position: relative;
-  top: -200;
+  position: absolute;
+  top: 700px;
+  text-align: center;
+  left: 560px;
+  
+}
+#img1{
+position: absolute;
+left: -550px;
+}
+
+#img2{
+  position: absolute;
+  left:500px ;
 }
 /*Map*/
 .m-about{
   position: absolute;
-top: 200px;
+top: 195px;
   right: 0px;
 
   background-color: gray;
@@ -272,22 +364,101 @@ top: 200px;
 /*Newsletter*/
 .newsletter{
   position:absolute;
- left: 550px;
-  top: 180px;
+ left: 0px;
+  top: -70px;
   width: 300px;
   padding: 50px;
   margin: 20px;
-  background-color: greenyellow ;  
-  border: 10px solid green;
-
+  height: 10px;
+  width: 500px;
+font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.f-input{
+  font-family: monospace;
+  background-color: wheat;
+}
+#f-btn{
+  background-color: wheat;
 }
 /*Q&A content*/
 #moving{
  text-align: center;
- border: 10px solid black;
+ border: 10px solid rgb(161, 145, 116);
  font-size: 25px;
+ width: 75%;
 }
-/*Shops price*/
-.price{
-  
+
+/*q%a-1paragraph*/
+.q-0{
+  position: relative;
+  left: 400px;
+  width: 700px;
+}
+/*q%a-2paragraph*/
+.q-1{
+  position: relative;
+  left: 400px;
+  width: 700px;
+}
+/*q%a-3paragraph*/
+.q-2{
+  position: relative;
+  left: 400px;
+  width: 700px;
+}
+/*q%a-4paragraph*/
+.q-3{
+  position: relative;
+  left: 400px;
+  width: 700px;
+}
+/*revies*/
+.reviews{
+  position: absolute;
+  width: 800px;
+  height: 400px;
+  background-color: wheat;
+  border: solid teal;
+  left: 100px;
+  top: 550px;
+}
+/*review-1*/
+.review-1{
+  position: absolute;
+  left: 12%;
+  top: 650px;
+  width: 150px;
+  font-size: 22px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: wheat;
+  border:solid teal
+}
+/*review-2*/
+.review-2{
+  position: absolute;
+  left: 30%;
+  top: 650px;
+  width: 150px;
+  font-size: 22px;
+  font-family: monospace;
+  background-color: wheat;
+  border:solid teal
+}
+/*review-3*/
+.review-3{
+  position: absolute;
+  left: 48%;
+  top: 650px;
+  width: 100px;
+  font-size: 22px;
+  font-family: monospace;
+  background-color: wheat;
+  border:solid teal;
+}
+.revies-h{
+  position: absolute;
+  left: 30%;
+  top: 550px;
+  font-size: 30px;
+  z-index: 1;
 }

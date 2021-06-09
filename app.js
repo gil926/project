@@ -25,5 +25,12 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
+let add = document.getElementById("add");
+let cart = 0;
+add.onclick=function(){
+  cart +=1;
+  alert("an item has been added to the cart");
+  alert("items in cart"+cart);
+}
 
 
