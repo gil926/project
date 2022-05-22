@@ -1,0 +1,611 @@
+<html>
+<head>
+<link rel="stylesheet" href="styles.css">
+<style>
+  *{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body{
+    width: 100%;
+    position: relative;
+    background-image: url("Flowerbackground.jpg"); 
+    background-size: 100% 100% ;
+}
+h1{
+    color: rgb(7, 59, 7);
+}
+/*nav bar*/
+.nav-links{
+    position: fixed ;
+    overflow: hidden;
+    background-color: teal;
+    width: 100%;
+    z-index: 2;
+}
+.nav-links a{
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: monospace;
+}
+
+.nav-links a:hover{
+  text-decoration: none;
+  color: white;
+  border-bottom: 3px solid darkblue;
+}
+.nav-links a:active{
+border-bottom: 3px solid darkblue;
+}
+.nav-h{
+    color: greenyellow;
+}
+.Nav-head{
+  text-align: right;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size:20px ;
+  font-family: monospace;
+  z-index: 2;
+}
+.q-title{
+    text-align: center;
+}
+/*Footer*/
+.footer{
+  position: absolute;
+    background-color: teal;
+    width: 100%;
+    font-family:'Times New Roman', Times, serif ;
+   bottom: 0;
+}
+
+
+.map.map-h{
+    padding: 20px;
+}
+
+/*about newsletter*/
+.submit{
+  position: absolute;
+  left: 75%;
+  top: 150px;
+  background-color: wheat;
+  width: 350px;
+  border: 15px solid darkcyan;
+  padding: 70px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin: 20px
+  
+}
+/*submit paraghraoh*/
+.ask-p{
+  font-size: 28px;
+}
+/*paragraph1-about*/
+  #about{
+  position: relative;
+  width: 500px;
+  height: 440px;
+    left: 450px;
+  top: 40;
+  text-align: center;
+  border: solid darkolivegreen;
+font-size: 22px;
+background-color: wheat;
+}
+/*paraghraph2-about*/
+.about2{
+  position: relative;
+  left: 5%;
+  top: -400;
+  background-color: wheat;
+  width: 200px;
+  border:solid teal;
+font-size: 20px;
+}
+/*contact us*/
+.contact{
+  position: relative;
+  left: 5%;
+  top: -400;
+  background-color: wheat;
+  width: 300px;
+  border:solid teal ;
+  font-size: 20px;
+}
+#submit{
+  color: black;
+  background-color: wheat;
+}
+/*Logo*/
+.logo{
+  width: 50px;
+  height: 50px;
+  float: right;
+}
+/*Homes first paraghraph*/
+.p-1{
+    position: relative;
+    top: 110;
+    background-color: wheat;
+    width: 900px;
+    border: 15px solid darkcyan;
+    padding: 60px;
+    font-family: 'Times New Roman', Times, serif  ;
+    font-size: 22px;
+  }  
+  /*headline*/
+.a-h{
+  position: absolute;
+  top: 90px;
+ left: 600px;
+  color: rgb(7, 59, 7);
+  border-color: teal;
+  
+}
+/*Home images*/  
+    .h-img{
+      position:absolute;
+      left: 1000px;
+      top: 70px;
+      background-color: wheat;
+      border: solid teal;
+    }
+    /*home-image*/
+    .img-h{
+      position: relative;
+      left: 70%;
+      top: -500px;
+      border: solid darkcyan;
+    }
+    * {box-sizing: border-box}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+.slide-h{
+  color: rgb(9, 90, 9);
+  border-color: yellowgreen;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 20px;
+   
+}
+p
+{
+  font-family: "Times New Roman", Times, serif; 
+}
+h3
+{
+
+    font-family: Impact, Charcoal, sans-serif;
+}
+
+/*Shop items-images*/
+.item-img
+{
+    width: 250px;
+    height: 250px;
+    
+}
+/*Shop-items names*/
+.item-id{
+  position: relative;
+  top: -275px;
+  font-size: 20px;
+background-color: whitesmoke;
+color: teal;
+}
+.item{
+  position: relative;
+  background-color: white;
+  border: solid cyan;
+}
+/*footers headline-names*/
+.fh-names{
+  position: absolute;
+  background-color: teal;
+  left: 81%;
+top: 0px;
+font-size: 30px;
+}
+/*footer headline-find us*/
+.fh-find{
+position:absolute;
+  left: 45%;
+  font-size: 30px;
+}
+/*Footers names*/
+.f-names{
+  position: absolute;
+  left: 81%;
+  top: 50px;
+  width: 2px;
+  background-color: teal;
+  font-size: 20px;
+}
+/*footer-social logos*/
+.f-socialogos{
+  position: absolute;
+  top: 50px;
+  left:45%;
+}
+/*footer saparate-line1*/
+.f-line1{
+  position: absolute;
+  width: 1px;
+  height: 150px;
+  left: 40%;
+}
+.f-line2{
+  position: absolute;
+  width: 1px;
+  height: 150px;
+  left: 75%;
+    
+}
+/*f-imgs-git*/
+.f-img{
+  position: absolute;
+  bottom: 0;
+  background-color: teal;
+  font-size: 20px;
+}
+/*f-img-facebook*/
+.f-img2{
+  position: absolute;
+  bottom: 0px;
+  left: 100px;
+
+}
+.f-img3{
+position: absolute;
+bottom: 0px;
+left: 280px;
+}
+/*About-images*/
+.about-img1{
+  position: absolute;
+  top: 700px;
+  text-align: center;
+  left: 560px;
+  
+}
+#img1{
+position: absolute;
+left: -550px;
+}
+
+#img2{
+  position: absolute;
+  left:500px ;
+}
+/*Map*/
+.m-about{
+  position: absolute;
+top: 195px;
+  right: 0px;
+
+  background-color: gray;
+}
+/*Newsletter*/
+.newsletter{
+  position:absolute;
+ left: 0px;
+  top: -70px;
+  width: 300px;
+  padding: 50px;
+  margin: 20px;
+  height: 10px;
+  width: 500px;
+font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.f-input{
+  font-family: monospace;
+  background-color: wheat;
+}
+#f-btn{
+  background-color: wheat;
+}
+/*Q&A content*/
+#moving{
+ text-align: center;
+ border: 10px solid rgb(161, 145, 116);
+ font-size: 25px;
+ width: 75%;
+ 
+}
+/*q%a-1paragraph*/
+.q-0{
+  position: relative;
+  left: 400px;
+  width: 700px;
+}
+/*q%a-2paragraph*/
+.q-1{
+  position: relative;
+  left: 400px;
+  width: 700px;
+}
+/*q%a-3paragraph*/
+.q-2{
+  position: relative;
+  left: 400px;
+  width: 700px;
+}
+/*q%a-4paragraph*/
+.q-3{
+  position: relative;
+  left: 400px;
+  width: 700px;
+}
+/*revies*/
+.reviews{
+  position: absolute;
+  width: 800px;
+  height: 400px;
+  background-color: wheat;
+  border: solid teal;
+  left: 100px;
+  top: 550px;
+}
+/*review-1*/
+.review-1{
+  position: absolute;
+  left: 12%;
+  top: 650px;
+  width: 150px;
+  font-size: 22px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: wheat;
+  border:solid teal
+}
+/*review-2*/
+.review-2{
+  position: absolute;
+  left: 30%;
+  top: 650px;
+  width: 150px;
+  font-size: 22px;
+  font-family: monospace;
+  background-color: wheat;
+  border:solid teal
+}
+/*review-3*/
+.review-3{
+  position: absolute;
+  left: 48%;
+  top: 650px;
+  width: 100px;
+  font-size: 22px;
+  font-family: monospace;
+  background-color: wheat;
+  border:solid teal;
+}
+.revies-h{
+  position: absolute;
+  left: 30%;
+  top: 550px;
+  font-size: 30px;
+  z-index: 1;
+}
+</style>
+</head>
+    <body>
+      
+        
+    <div class="main">
+           
+            
+            <nav>
+              <div class="nav-links">
+                <img class="logo" src="logo.png.png ">
+                <div class="Home-nav"><a href="http://localhost:3000">Home</div></a>
+                
+                <div class="shop-nav"><a href="http://localhost:3000/Shop">Shop</div></a>
+                
+                <div class="Q&A-nav"><a href="http://localhost:3000/q&a">Q&A</div></li></a>
+                
+                <div class="About-nav"><a href="http://localhost:3000/about">About</div></a>
+               
+                <div class="Nav-head">Nizan Nursary</div>
+            </div>
+                            </nav>
+                      
+                            <br><br><br>
+                            <div class="a-h">
+                            <h1>About Nizan Nursary</h1>
+                            </div>
+                            <br><br><br><br><br>
+                           
+                            </div>
+                            <div id="about">
+                              <h2>A bit about our Nursary</h2>
+                              <p>Nitzan Nursery is an experiential center that invites its visitor into the plant and animal world and offers a variety of options
+                                For leisure and relaxation. The nursery has a wide variety of plants that are divided professionally and conveniently according to different characteristics: houseplants,
+                                Garden plants, ornamental trees and fruit trees. 
+                                Our guidelines in building the nursery were to provide a basket that covers each area professionally and of course at prices
+                                Particularly attractive!
+                                The variety of services in the nursery for her to receive free advice for planning and setting up the garden in your home. Can't come up with any question either
+                                Problem and get answered by professionals on the spot.
+    </p> 
+
+</div><!--paraghrap2-->
+<div class="about2">
+  <h2>When did we start</h2>
+  <p>we started since the 2005 and gained more knowlege about gardening as time passed.<br>
+  by that you can be sure that at Nizan Nursery you will get the best treatment for your garden.
+  </p>
+</div>
+<div class="contact">
+  <h2>Contact us</h2>
+  <p>our phone number: 07-500-300.<br>
+  our mail:NIzanNursary@gmail.com.<br>
+  our location:keriyat ono,michel volk-2.
+  </p>
+</div>
+<div>
+  <br>
+  <div class="about-img1">
+   <h2>A bit photos of our jobs.</h2> <br>
+      <img src="https://i.pinimg.com/originals/7d/f1/f5/7df1f580c76a5e6c7aac8a1b4f84b4c9.jpg"id = 
+      "img1"  alt="" width="450" height="400">
+      
+  
+    <img src="https://i.pinimg.com/originals/06/48/8a/06488ac03f277e19cd22f2bdacf8fbc4.jpg"  id ="img2" alt="" width="450" height="400">
+  
+  
+  
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLYzXqyhLDOl4Pcr6T1Q-PMMVGB-Yzj_vjeA&usqp=CAU"  alt="" width="450" height="400">
+  </div>
+            
+            <div class="m-about">
+              <h3>You can find us here</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3365.460800623494!2d35.01338468482536!3d32.48711098106055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151d0f1241e8cc39%3A0xcba0dd1475f6d071!2z157Xqdeq15zXqiDXoNeZ16bXnyAtINee16nXpyDXqdee16LXldeg15kg15HXoiLXng!5e0!3m2!1siw!2sil!4v1619105208203!5m2!1siw!2sil" width="500" height="420" style="border:0;" allowfullscreen="" loading="lazy"></iframe>  
+        </div>    
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            </div>
+      </div>
+          
+    
+      <footer class="footer">
+        <!--newsletter-->
+  <div class="newsletter">
+    <form>
+    <h2>Enter details to get updates on sales first!!!</h2> <br>         
+    <label for="mail">Enter Email:</label>
+    <input class="f-input" placeholder="enter email"><br>
+    <label for="phonenum">Enter phone number:</label>
+    <input class="f-input" placeholder="enter phone number"><br>
+    <label for="finish">Press here to Submit:</label>
+    <button id="f-btn" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Submit</button>
+  </form>
+  </div>
+       <div class="fh-names">Producers Names</div>
+       <div class="fh-find">Find us on social</div>
+       <hr class="f-line1">
+       <hr class="f-line2">  
+            <div class="f-names" >Gil,Theila,Batel,Mordechai</div>
+            <div class="f-socialogos">
+         <a href="https://github.com/gil926/project"><img src="http://pngimg.com/uploads/github/github_PNG40.png" width="50px" height="50px"></a>
+        
+          
+            <a href="https://www.facebook.com/campaign/landing.php?campaign_id=1635585115&extra_1=s%7Cc%7C314899114033%7Ce%7Cface%20book%7C&placement=&creative=314899114033&keyword=face%20book&partner_id=googlesem&extra_2=campaignid%3D1635585115%26adgroupid%3D63029865496%26matchtype%3De%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-146381782%26loc_physical_ms%3D1007978%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gclid=Cj0KCQjwh_eFBhDZARIsALHjIKfZTdyZBvObiZywbdDLdTx7hxQin6gFl57uOHNRkwKxmQxYqoTUIJUaAnypEALw_wcB">
+              <img src=facebook.png width="50px" height="50px"></a>
+        
+       
+        <a href="https://www.instagram.com/"> <img style="background-color: black;" src="instegram.png" width="50px" height="50px"></a>
+        </div>
+        <div class="f-img"><img src="https://brandlogos.net/wp-content/uploads/2014/11/Copyright-symbol-vector-free-download.png"  width="20px" alt="copyrights"> Nizan gardenin.inc</div>
+    <br><br><br><br><br><br><br><br><br><br><br>
+    </footer>
+
+
+    
+
+   
+         
+        </div>
+
+        
+    </body>
+
+</div>
+</html>
