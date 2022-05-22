@@ -39,6 +39,15 @@ border-bottom: 3px solid darkblue;
 .nav-h{
     color: greenyellow;
 }
+.Nav-head{
+  text-align: right;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size:20px ;
+  font-family: monospace;
+  z-index: 2;
+}
 .q-title{
     text-align: center;
 }
