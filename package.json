@@ -1,0 +1,25 @@
+{
+  "name": "nizan-nursery_project",
+  "version": "1.0.0",
+  "description": "nizan-nursery_project",
+  "main": "server.js",
+  "scripts": {
+    "test": "test",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gil926/project.git"
+  },
+  "author": "gil",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gil926/project/issues"
+  },
+  "homepage": "https://github.com/gil926/project#readme",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "nodemon": "^2.0.16"
+  }
+}
